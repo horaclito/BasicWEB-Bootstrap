@@ -1,0 +1,21 @@
+.jumbotron {
+	background-color: lightblue;
+	color: black;
+}
+
+footer {
+	padding: 10px 10px 0 10px;
+	background-color: lightblue;
+	margin-bottom: 0px;
+	margin-top: 10px;
+}
+
+.card-fac {
+	flex: 1 150px;
+	padding: 2px 2px 2px 2px;
+}
+
+.btn-reserva {
+	object-position: middle;
+	width: 100%;
+}
