@@ -1,19 +1,24 @@
 {
   "name": "proyecto1",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "primer proyecto",
+  "main": "index.html",
+  "dependencies": {},
   "scripts": {
+    "dev": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/horaclito/proyecto1.git"
   },
-  "author": "Horacio A. Chiarella",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/horaclito/proyecto1/issues"
   },
-  "homepage": "https://github.com/horaclito/proyecto1#readme"
+  "homepage": "https://github.com/horaclito/proyecto1#readme",
+  "devDependencies": {
+    "lite-server": "^2.4.0"
+  }
 }
