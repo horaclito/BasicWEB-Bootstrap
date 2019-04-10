@@ -16,6 +16,6 @@ footer {
 }
 
 .btn-reserva {
-	object-position: middle;
-	width: 100%;
+   justify-content: center;
+   align-items: center;
 }
