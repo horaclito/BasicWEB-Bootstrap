@@ -16,7 +16,6 @@ footer {
 	padding: 2px 2px 2px 2px;
 }
 
-.btn-reserva {
-   justify-content: center;
-   align-items: center;
+.footer-address-icon {
+	padding-right: 10px;
 }

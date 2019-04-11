@@ -9,9 +9,8 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="/favicon.ico" type="image/x-icon">
     <title>Facundo Fernandez Fotografía</title>
+    <link rel="icon" type="image/ico" href="oly.png">
   </head>
   <body>
   	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
@@ -39,16 +38,16 @@
     			<li class="breadcrumb-item active" aria-current="page">Home</li>
     		</ol>
     	</nav>
-    	<div class="row">
-    		<div class="col-sm">
+    	<div class="d-flex justify-content-between">
+    		<div class="flex-column">
     			<h2>Fotografia</h2>
    				<p>Aca podes encontrar mis mejores fotos</p>
    			</div>
-   			<div class="col-sm">
+   			<div class="flex-column">
    				<h2>Videos</h2>
    				<p>Aca estan mis mejores videos</p>	
    			</div>
-   			<div class="col-sm">
+   			<div class="flex-column">
    			<h2>Tatuajes</h2>
    				<p>Aca podes ver los tatuajes que hago</p>
    			</div>
@@ -82,21 +81,21 @@
    			</div>
    		</div>
    		<hr>
-   		<div class="d-flex justify-content-around">
+   		<div class="d-flex">
    			<div class="col-sm flex-column justify-content-between">
    				<div>
    					<p>Si queres reservar mis servicios como fotografo hace click aqui</p>
    				</div>
-   				<div>
-   					<button type="button" class="btn btn-primary btn-reserva">Reservar Turno</button>	
+   				<div class="col-sm-8">
+   					<button type="button" class="btn btn-primary">Reservar Turno</button>	
    				</div>
    			</div>
-   			<div class="float right flex-column justify-content-between">
+   			<div class="col-sm-4 flex-column justify-content-between">
    				<div>
    					<p>Si queres tatuarte conmigo hace click aqui</p>	
    				</div>	
-    			<div>
-    				<button type="button" class="btn btn-primary btn-reserva">Reservar Turno</button>
+    			<div class="text-center">
+    				<button type="button" class="btn btn-primary flex-end;">Reservar Turno</button>
     			</div>
     		</div>
     	</div>
@@ -104,15 +103,15 @@
    	<hr>
    	<footer>
    		<div class="row">
-   			<div class="col-sm-4">
-   			<a href="http://www.facebook.com">Facebook</a>
-   			<a href="http://www.instgram.com">Instagram</a>
+   			<div class="col-sm-4 d-flex flex-column">
+   				<a href="http://www.facebook.com">Facebook</a>
+   				<a href="http://www.instgram.com">Instagram</a>
    			</div>
-   			<div class="col-sm-4">
+   			<div class="col-sm-4 d-flex flex-column align-items-center">
    				<address>
-   					Cordoba, Argentina
-   					+5493571563000
-   					ffff@gmail.com
+   					<p><span class="oi oi-home footer-address-icon"></span>Cordoba, Argentina</p>
+   					<p><span class="oi oi-phone footer-address-icon"></span>+5493571563000</p>
+   					<p><span class="oi oi-envelope-closed footer-address-icon"></span>ffff@gmail.com</p>
    				</address>
    			</div>
    			<div class="col-sm-4 d-flex flex-column align-items-end">
