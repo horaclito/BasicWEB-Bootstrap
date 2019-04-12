@@ -36,44 +36,72 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="./index.html">Home</a></li>-
-          <li class="breadcrumb-item active" aria-current="page">Contacto</li>-
+          <li class="breadcrumb-item active" aria-current="page">Contacto</li>
         </ol>
       </nav>
-      <div class="table-responsive">
-        <table class="table table-striped">
-          <thead class="thead-dark">
-            <th>Cantidad de horas</th>
-            <th>Foto</th>
-            <th>video</th>
-            <th>Foto y video</th>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1 hora</td>
-              <td>$ 100</td>
-              <td>$ 500</td>
-              <td>$ 1000</td>
-            </tr>
-            <tr>
-              <td>2 horas</td>
-              <td>$ 200</td>
-              <td>$ 1000</td>
-              <td>$ 2000</td>
-            </tr>
-            <tr>
-              <td>4 horas</td>
-              <td>$ 350</td>
-              <td>$ 1250</td>
-              <td>$ 2500</td>
-            </tr>
-            <tr>
-              <td>8 horas</td>
-              <td>$ 650</td>
-              <td>$ 2000</td>
-              <td>$ 4000</td>
-            </tr>
-          </tbody>
-        </table>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="compara-tab" data-toggle="tab" href="compara" role="tab" aria-controls="compara" aria-selected="true">Compara</a>
+        </li>
+        <li>
+          <a class="nav-link" id="tarjetas-tab" data-toggle="tab" href="tarjetas" role="tab" aria-controls="tarjetas" aria-selected="false">Tarjetas aceptadas</a>
+        </li>
+        <li>
+          <a class="nav-link" id="disponibles-tab" data-toggle="tab" href="disponibles" role="tab" aria-controls="disponibles" aria-selected="false">Turnos disponibles</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="mytabcontent">
+        <div class="tab-pane fade show active" id="compara" role="tabpanel" aria-labelledby="compara-tab">
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead class="thead-dark">
+                <th>Cantidad de horas</th>
+                <th>Foto</th>
+                <th>video</th>
+                <th>Foto y video</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1 hora</td>
+                  <td>$ 100</td>
+                  <td>$ 500</td>
+                  <td>$ 1000</td>
+                </tr>
+                <tr>
+                  <td>2 horas</td>
+                  <td>$ 200</td>
+                  <td>$ 1000</td>
+                  <td>$ 2000</td>
+                </tr>
+                <tr>
+                  <td>4 horas</td>
+                  <td>$ 350</td>
+                  <td>$ 1250</td>
+                  <td>$ 2500</td>
+                </tr>
+                <tr>
+                  <td>8 horas</td>
+                  <td>$ 650</td>
+                  <td>$ 2000</td>
+                  <td>$ 4000</td>
+                </trtabpane>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+          <div class="d-flex justify-content-center">
+            <div class="card" style="width:18rem;">
+              <div class="card-header" style="background-color: blue; color: white;">Tarjetas aceptadas
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Tarjeta Naranja</li>
+                <li class="list-group-item">Tarjeta Mastercard</li>
+                <li class="list-group-item">Tarjeta Visa</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
    	<hr>
@@ -101,5 +129,6 @@
     <script src="node_modules/jQuery/dist/jQuery.min.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
   </body>
 </html>
