@@ -61,7 +61,7 @@
             <h3 class="card-title">Tatuajes</h3>
             <p class="card-text">Aca podes encontrar mis mejores tatuajes</p>
             <img src="./imagenes/3.png" class="img-fluid mt-auto">
-            <button type="button" class="btn btn-outline-primary mt-auto">Ir a la galeria</button>
+            <button type="button" class="btn btn-outline-primary mt-auto" data-toggle="tooltip" data-placement="auto" title="Si no le gusta el ignorant style siga su camino">Ir a la galeria</button>
           </div>
         </div>
       </div>
@@ -168,5 +168,10 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      $(function(){
+        $("[data-toggle='tooltip']").tooltip();
+      });
+    </script>
   </body>
 </html>
