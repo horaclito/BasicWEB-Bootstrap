@@ -130,7 +130,7 @@
           </address>
         </div>
         <div class="col-sm-4 d-flex flex-column align-items-end">
-          <a href="http://www.facebook.com">Nosotros</a>
+          <a href="http://www.facebook.com" data-toggle="popover" title="quienes somos?" data-trigger="hover" >Nosotros</a>
           <a href="http://www.instagram.com">Terminos y condiciones</a>
           <a href="#contacto" data-toggle="modal">Contacto</a>
         </div>  
@@ -171,6 +171,7 @@
     <script>
       $(function(){
         $("[data-toggle='tooltip']").tooltip();
+        $("[data-toggle='popover']").popover();
       });
     </script>
   </body>
