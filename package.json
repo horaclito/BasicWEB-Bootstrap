@@ -8,11 +8,13 @@
     "jquery": "^3.3.1",
     "open-iconic": "^1.1.1",
     "popper": "^1.0.1",
-    "popper.js": "^1.15.0"
+    "popper.js": "^1.15.0",
+    "sass": "^1.18.0"
   },
   "scripts": {
     "dev": "lite-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"scss": "node-sass -o css/ css/"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,7 @@
   },
   "homepage": "https://github.com/horaclito/proyecto1#readme",
   "devDependencies": {
-    "lite-server": "^2.4.0"
+    "lite-server": "^2.4.0",
+    "node-sass": "^4.11.0"
   }
 }
