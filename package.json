@@ -5,6 +5,7 @@
   "main": "index.html",
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "gifsicle": "^4.0.1",
     "jquery": "^3.3.1",
     "open-iconic": "^1.1.1",
     "popper.js": "^1.15.0"
@@ -14,7 +15,9 @@
     "start": "concurrently \"npm run watch:scss\" \"npm run dev\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass -o css/ css/",
-    "watch:scss": "onchange 'css/*scss' -- npm run scss"
+    "watch:scss": "onchange 'css/*scss' -- npm run scss",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin imagenes/* --out-dir=dist/imagenes"
   },
   "repository": {
     "type": "git",
@@ -28,6 +31,9 @@
   "homepage": "https://github.com/horaclito/proyecto1#readme",
   "devDependencies": {
     "concurrently": "^4.1.0",
+    "copyfiles": "^2.1.0",
+    "imagemin": "^6.1.0",
+    "imagemin-cli": "^4.0.1",
     "lite-server": "^2.4.0",
     "node-sass": "^4.11.0",
     "onchange": "^5.2.0",
