@@ -11,8 +11,10 @@
   },
   "scripts": {
     "dev": "lite-server",
+    "start": "concurrently \"npm run watch:scss\" \"npm run dev\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass -o css/ css/"
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange 'css/*scss' -- npm run scss"
   },
   "repository": {
     "type": "git",
@@ -25,7 +27,10 @@
   },
   "homepage": "https://github.com/horaclito/proyecto1#readme",
   "devDependencies": {
+    "concurrently": "^4.1.0",
     "lite-server": "^2.4.0",
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.11.0",
+    "onchange": "^5.2.0",
+    "rimraf": "^2.6.3"
   }
 }
