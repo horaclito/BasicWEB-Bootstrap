@@ -10,16 +10,15 @@ $verde: #C5D6DD;
 }
 
 .jumbotron {
-	background-color: $rojo;
+	background-color: $verde;
 	color: black;
-	margin-top: 50px;
+	@include margenes(50px,0px,20px,0px);
 }
 
 footer {
 	padding: 10px 10px 0 10px;
-	background-color: lightblue;
-	margin-bottom: 0px;
-	margin-top: 10px;
+	background-color: $verde;
+	@include margenes(0px,10px,10px,10px);
 }
 
 .card-fac {
